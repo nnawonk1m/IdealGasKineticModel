@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ideal Gas - Part 5: Molecular Interpretation of Temperature</title>
+        <link rel="stylesheet" href="pt5.css">
+    </head>
+    <body>
+        <div class="heading"><h2>.ೃ࿔ Part 5: Molecular Interpretation of Temperature .ೃ⋆</h2></div>
+
+        <div class="caption">
+            <p>We have often studied that the higher the temperature, the faster the gas molecules move, and the higher the kinetic energy.(Charles' Law) However, how can we prove this without relying on empirical data? </p>
+        </div>
+
+        <div class="equation">
+            <p>P = 1/3 * (Nm / V) * c<sup>2</sup></p>
+            <p>PV = 1/3 * Nm * c<sup>2</sup></p>
+            <p>3/2 * PV = 1/2 * m * c<sup>2</sup> * N</p>
+            <p>We also know from the Ideal Gas Equation that...</p>
+            <p>PV = nRT</p>
+
+            <p>3/2 * nRT = 1/2 * m * c<sup>2</sup> * N</p>
+
+            <p>n: number of moles</p>
+            <p>N: number of molecules = number of moles * N<sub>A</sub></p>
+            <p>N<sub>A</sub> = N/n</p>
+
+            <p>3/2 * n/N * RT = 1/2 * m * c<sup>2</sup></p>
+            <p>3/2 * 1/N<sub>A</sub> * RT = 1/2 * m * c<sup>2</sup></p>
+
+            <p>R/N<sub>A</sub>: Boltzmann Constant(K<sub>B</sub>)</p>
+            <p>3/2 * K<sub>B</sub> * T = 1/2 * m * c<sup>2</sup></p>
+            <p>3/2 * K<sub>B</sub>T = Mean Kinetic Energy</p>
+        </div>
+
+        <div class="caption"> 
+            <p>Thus we are able to conclude that the mean Kinetic Energy gives a measure of absolute temperature. Temperature is directly correlated to the kinetic energy of a gas molecule. Hence, the internal energy of gas molecules is totally kinetic.</p>
+        </div>
+
+        <div class="equation">
+            <p>&Delta;U = Internal Energy = 3/2 * K<sub>B</sub>T</p>
+        </div>
+
+        <div class="scene-container"></div>
+
+        <div class="temp-control">
+            <div class="label"><p>Temperature(K)</p></div>
+            <input type="range" id="tempSlider" name="tempSlider" min="73" max="546" value="273">
+        </div>
+
+        <div class="controls">
+            <div class="button back">back</div>
+            <div class="button next">next</div>
+        </div>
+
+        <script type="module" src="pt5.js"></script>
+    </body>
+</html>
